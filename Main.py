@@ -4,7 +4,7 @@ import time
 import sys
 
 __author__ = "Hamad Nassor"
-__maintainer__ = Hamad Nassor"
+__maintainer__ = "Hamad Nassor"
 __email__ = "nassorh.dev@gmail.com"
 
 class Maze():
