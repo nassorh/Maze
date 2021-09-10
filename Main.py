@@ -150,7 +150,7 @@ class Maze():
             Starting pos is then marked as visited
             Colour of starting pos is changed
             
-                while the stack is not empty
+                while the queue is not empty
                     current = queue.pop(0) -> queue.dequeue
                     Checks if the bottom right corner is found if so
                         Find the shoresPath
@@ -158,6 +158,7 @@ class Maze():
                     All neighbours are fetched 
                         If the neigbour is not marked as visited and has no wall blocking(meaning we can enter the block)
                         marked as visited and add to queue
+                        add current as parent 
                         update colour of visted cell
 
         
