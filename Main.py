@@ -7,14 +7,18 @@ __author__ = "Hamad Nassor"
 __maintainer__ = "Hamad Nassor"
 __email__ = "nassorh.dev@gmail.com"
 
-class Maze():
+class Maze():   
     """
     Maze class to repesent the maze as a graph using
     edges(walls) and vertices(cells)
-
-    self.vertices -> Dictonary that contains all of the vertices in form of coor:Cell
+      
+    Attributes:
+        vertices (dict): Contains all of the vertices in form of coor:Cell
     """
     def __init__(self):
+        """
+        The constructor for Maze class.
+        """
         self.vertices = dict()
 
     def getVertex(self,x,y):
@@ -235,12 +239,20 @@ class Maze():
             
 class Cell():
     """
-    Cell class which reprensents all cells as vertices
-
-    self.coor(Tuple) -> Contains the abstacr coor of the cell
-    self.neighbours(Dict) -> Contains all of the vertices in form of Cell:wall
+    Cell class which reprensents all cells as vertices using abstract coors
+      
+    Attributes:
+        coor (Tuple): Contains the abstacr coor of the cell
+        neighbours (Dict):Contains all of the vertices in form of Cell:wall
     """
     def __init__(self,x,y):
+        """
+        The constructor for Cell class.
+  
+        Parameters:
+           x (int): The abstract x coor
+           y (int): The abstract y coor  
+        """
         self.coor=(x,y)
         self.neighbours = dict() #neightbour:wall 
 
@@ -280,20 +292,24 @@ class Cell():
     
 class UI():
     """
-        UI class hanldes all the graphic
-
-        self.WIDTH(int)         --> Width of window
-        self.HEIGHT(int)        --> Height of window
-        self.WHITE(Tuple)       --> Value of RGB white
-        self.VISITEDCOL(Tuple)  --> Value of RGB white
-        self.CURRENTCOL(Tuple)  --> Value of RGB white
-        self.CELLWIDTH(int)     --> Cell width
-        self.CELLHEIGHT(int)    --> Cell heihgt
-        self.LINESIZE(int)      --> Line thickness
-        self.SPEED(int)         --> Speed of loading
-        self.Screen             --> Screen object
+    UI class hanldes all the graphic operations
+      
+    Attributes:
+        WIDTH(int)          Width of window
+        HEIGHT(int)         Height of window
+        WHITE(Tuple)        Value of RGB white
+        VISITEDCOL(Tuple)   Value of RGB white
+        CURRENTCOL(Tuple)   Value of RGB white
+        CELLWIDTH(int)      Cell width
+        CELLHEIGHT(int)     Cell heihgt
+        LINESIZE(int)       Line thickness
+        SPEED(int)          Speed of loading
+        Screen              Screen object
     """
     def __init__(self):
+        """
+        The constructor for UI class. 
+        """
         #Variables
         self.WIDTH = 1000
         self.HEIGHT = 1000
@@ -441,7 +457,7 @@ class UI():
 
 class Helper():
     """
-    Helper Class
+    Helper class
     """
     def createCells(x,y):
         """
