@@ -319,7 +319,7 @@ class UI():
         self.CELLWIDTH = self.WIDTH/x
         self.CELLHEIGHT = self.WIDTH/y
         self.LINESIZE = 1
-        self.SPEED = 1
+        self.SPEED = 0.5
         #Screen
         self.screen=pygame.display.set_mode((self.WIDTH,self.HEIGHT),0,32)
     
