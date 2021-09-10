@@ -4,7 +4,7 @@ import time
 import sys
 
 __author__ = "Hamad Nassor"
-__maintainer__ = "Rob Knight"
+__maintainer__ = Hamad Nassor"
 __email__ = "nassorh.dev@gmail.com"
 
 class Maze():
@@ -38,8 +38,8 @@ class Maze():
             C (Cell): A cell object being added to the graph
 
             Returns:
-            Boolean:True if the value has been added
-                    False if the value was not added since it isn't an instance of Cell class or already exists in the graph
+            Boolean:True if the cell has been added
+                    False if the cell was not added since it isn't an instance of Cell class or already exists in the graph
 
        """
         if isinstance(c,Cell) and c.coor not in self.vertices:
