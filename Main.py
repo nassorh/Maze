@@ -434,6 +434,7 @@ class UI():
             topRightY = x[1]*self.CELLHEIGHT
             pygame.draw.rect(self.screen, (0, 0, 255), pygame.Rect(topLeftX+1, topRightY+1, ui.CELLWIDTH-1, ui.CELLHEIGHT-1))
             pygame.display.flip()
+            time.sleep(self.SPEED)
         pygame.display.update()
         return True
 
