@@ -21,7 +21,7 @@ class Maze():
         """
         self.vertices = dict()
 
-    def getVertex(self,x,y):
+    def getVertex(self,x: int,y: int):
         """
             Fetches a vertex from self.vertices
 
@@ -204,7 +204,7 @@ class Maze():
                     time.sleep(ui.SPEED)
         return False       
 
-    def createShortestPath(self,parent,cell):
+    def createShortestPath(self,parent: dict,cell):
         """
             Used to construct the shorest path
 
@@ -246,7 +246,7 @@ class Cell():
         coor (Tuple): Contains the abstacr coor of the cell
         neighbours (Dict):Contains all of the vertices in form of Cell:wall
     """
-    def __init__(self,x,y):
+    def __init__(self,x: int,y: int):
         """
         The constructor for Cell class.
   
@@ -439,7 +439,7 @@ class UI():
         pygame.display.update()
         return True
 
-    def removeAllColBlocks(self,visitiedNode):
+    def removeAllColBlocks(self,visitiedNode: dict):
         """
             Removes all the coloured blocks and resets the maze back to normal
             
@@ -461,7 +461,7 @@ class Helper():
     """
     Helper class
     """
-    def createCells(x,y):
+    def createCells(x: int,y: int):
         """
             Creates all the cells
             
