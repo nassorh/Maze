@@ -11,3 +11,6 @@ This code can be excute from any editor you'd like.
 > **Note:** Different **editors** have different ways of dealing with Python code, so in case of doubt we recommend you run the code and tests from the command line as shown below.,
 
 	python3 Main.py
+
+# Warning
+When running the code, if the speed is too slow it causes to freeze. If the program freezes just adjust ui.SPEED variable 
