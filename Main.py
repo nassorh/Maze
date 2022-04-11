@@ -519,7 +519,7 @@ if __name__ =="__main__":
     ui.createWall()#Creates all the inital walls the outer wall
     maze.dfsMazeGen()
     maze.bfsSolver()
-    print(maze)
+    #print(maze)
     
     #Main While loop
     while True:
